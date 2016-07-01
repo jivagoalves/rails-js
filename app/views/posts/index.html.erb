@@ -1,0 +1,5 @@
+<%= form_for(:search, url: search_posts_path, method: "get", remote: true) do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
